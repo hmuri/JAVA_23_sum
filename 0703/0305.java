@@ -1,7 +1,6 @@
 import java.util.Random;
 
-public class main {
-
+public class 0305 {
 	public static void main(String[] args) {
 		Random random = new Random();
 		int[][] arr = new int[5][5];

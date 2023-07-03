@@ -1,5 +1,4 @@
-public class main {
-
+public class 0304 {
 	public static void main(String[] args) {
 		String[] pizzas = {"Pepperoni", "Mushrooms", "Onions", "Sausage", "Bacon" };
 		for (String pizza : pizzas)
