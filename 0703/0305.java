@@ -1,29 +1,25 @@
-//수업시간 실습 Lab: 은행 계좌 클래스 작성
-import java.util.Scanner;
+import java.util.Random;
 
-class BankCount{
-	private String owner;
-	private int accountNumber;
-	private int balance;
-	
-	
-	public void deposit(int money) {
-		this.balance+=money;
-	}
-	
-	public void withdraw(int money){
-		this.balance-=money;
-	}
-	
-	public int getBalance() {
-		return balance;
-	}
-}
 public class main {
-	public static void main(String args[]) {
-		BankCount myBank = new BankCount();
-		myBank.deposit(100);
-		myBank.withdraw(50);
-		System.out.printf("잔액은 %d.", myBank.getBalance());
+
+	public static void main(String[] args) {
+		Random random = new Random();
+		int[][] arr = new int[5][5];
+		int count = 0;
+		for(int i=0; i<5; i++) {
+			for(int j=0; j<5; j++) {
+				arr[i][j]=random.nextInt(2);
+			}
+		}
+		for(int i=0; i<5; i++) {
+			for(int j=0; j<5; j++) {
+				System.out.printf("%d ", arr[i][j]);
+				if(arr[i][j]==1) {
+					count++;
+				}
+			}
+			System.out.println();
+		}
+		System.out.printf("현재 관객 수는 %d명입니다.", count);
 	}
 }
